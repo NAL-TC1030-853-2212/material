@@ -15,6 +15,7 @@ public:
     virtual void imprime() const = 0;
     friend ostream& operator<<(ostream &os, const Empleado &empleado) {
         empleado.imprime();
+        return os;
     }
     string get_tipo_empleado() {
         return tipo_empleado;
